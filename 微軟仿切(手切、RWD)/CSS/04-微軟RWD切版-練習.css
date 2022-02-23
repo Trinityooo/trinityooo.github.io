@@ -139,6 +139,7 @@ body{
 
 .bn-img , .bn-bgc{
     width: 100%;
+    vertical-align: middle;
     /* height: 100%; */
 }
 
