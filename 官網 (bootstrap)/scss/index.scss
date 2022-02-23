@@ -92,22 +92,15 @@
 }
 
 #service-range2{
-    .card-body{
-        .card-info{
-            width: 80%;
-        }
-
         .service-icon2{
             width: 100px;
             height: 100px;
             border-radius: 50%;
             font-size: 37px;
-            @include button ( $text-color-white, $decoration-color-yellow);        
+            @include button ($text-color-white, $decoration-color-yellow);        
         }
-    }
-
-    
 }
+
 
 #product-hightlight{
     .row{

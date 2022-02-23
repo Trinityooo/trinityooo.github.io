@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/user-look.scss"
+    ],
+    "names": [],
+    "file": "user-look.css"
+}

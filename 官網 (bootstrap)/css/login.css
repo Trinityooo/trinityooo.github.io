@@ -3,6 +3,7 @@
   height: 100vh;
   background-image: url(https://cdn.pixabay.com/photo/2017/12/11/18/13/christmas-3012862_960_720.jpg);
   color: white;
+  background-size: contain;
 }
 
 .login-bgc .login-content-left {

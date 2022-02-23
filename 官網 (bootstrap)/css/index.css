@@ -80,11 +80,7 @@
   background-color: #e65757;
 }
 
-#service-range2 .card-body .card-info {
-  width: 80%;
-}
-
-#service-range2 .card-body .service-icon2 {
+#service-range2 .service-icon2 {
   width: 100px;
   height: 100px;
   border-radius: 50%;
