@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+    body{
+        margin: 0;
+    }    
+
+    .container{
+        max-width: 1200px;
+        border: solid 1px black;
+        margin: 0 150px;
+        border: soild 1px black;
+        
+    }
+    .block{
+
+        font-size: 0;
+
+    }
+    .box{
+        border: solid 1px black;
+        font-size: 20px;
+        height: 100px;
+    }
+
+    .box-A{
+        width: 100%;
+
+    }
+
+    .box-B, .box-C, .box-D, .box-E{
+        display: inline-block;
+        width: calc((100% - 60px) / 4);
+        margin-right:20px;
+        margin-top: 20px ;
+    }
+    
+
+    .box-E{
+        margin-right:0px;
+    }
+
+    .box-F, .box-G{
+        display: inline-block;
+        width: calc((100% - 20px) / 2);
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-bottom: 100vh;
+    }
+
+    .box-G{
+        margin-right:0px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        .box-B, .box-C, .box-D, .box-E{
+            width: calc((100% - 20px) / 2);
+        }
+        .box-C{
+            margin-right: 0;
+        }
+
+    @media screen and (max-width:500px){
+    .box-B, .box-C, .box-D, .box-E, .box-F, .box-G{
+            width:100%;
+            margin-right: 0;
+   }
+
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block">
+            <div class="box box-A">A</div>
+        </div>
+        <div class="block">
+            <div class="box box-B">B</div>
+            <div class="box box-C">C</div>
+            <div class="box box-D">D</div>
+            <div class="box box-E">E</div>
+        </div>
+        <div class="block">
+            <div class="box box-F">F</div>
+            <div class="box box-G">G</div>
+        </div>
+    </div>
+    
+</body>
+</html>

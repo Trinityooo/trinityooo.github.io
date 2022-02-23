@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+
+}
+
+.container{
+    max-width: 1920px; 
+    height: 1080px;
+}
+
+    .container-navbar{
+        background-color: rgba(248, 249, 255, 0.76);
+        width: 360px;
+        height: 100vh;
+        z-index: 1;
+        float: left;
+        position: relative;
+    }
+
+    .container-navbar-logo{
+        width: 360px;
+        position: relative;
+    }
+
+    .logo{
+        width: 150px;
+        position: absolute;
+        top: 75px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .container-navbar-menu{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        position: absolute;
+        transform: translate(-50%);
+        left: 50%;
+        top: 285px;
+
+        
+    }
+
+    .list{
+        text-align: center;
+        margin-bottom: 25px;
+        text-decoration: none;
+        
+    }
+
+    a{
+        color: rgba(62, 75, 102, 0.822);
+    }
+
+    a:active{
+        background-color: rgba(246, 199, 67, 0.767);
+    }
+
+    a:visited{
+        color: brown;
+    }
+    
+    a:hover {
+        color: rgba(12, 88, 160, 0.733);
+    }
+
+
+
+   .container-content{
+       width: calc(100% - 360px);
+       height: 100vh;
+       float: right;
+       position: relative;
+   }
+
+   .container-layout{
+       font-size: 0;
+       width: 963px;
+       height: 570px;
+       border:soild 1px black ;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+    }
+    
+    .layout-x, .layout-y, .layout-z {
+        width: 315px;
+        height: 100%;
+        border-radius:40px 10px ;
+        display: inline-block;
+        margin-right:6px; 
+        box-shadow: 1px 6px 10px  rgba(128, 128, 128, 0.5);
+    }
+        
+    .layout-z{
+        margin-right: 0;
+    }
+
+    @media screen and (max-width:1280px) {
+        .container{
+            height: 1024px;
+        }
+
+        .container-layout{
+            font-size: 0;
+            width: 800px;
+            height: 570px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+         }
+
+        .layout-x {
+                display: inline-block;
+                width: 820px;
+                height: 285px;
+                border-radius:40px 10px ;
+                box-shadow: 1px 6px 10px  rgba(128, 128, 128, 0.5);
+                margin-bottom: 9px;
+                object-fit: cover
+        }
+
+        .layout-y, .layout-z {
+            display: inline-block;
+            width: 395px;
+            height: 275px;
+            border-radius:40px 10px;
+            box-shadow: 1px 6px 10px  rgba(128, 128, 128, 0.5);
+            margin-right: 9px;
+            object-fit: cover
+        }
+        
+        .layout-z {
+            margin-right: 0px;           
+        }
+}
+
+
+
+    
