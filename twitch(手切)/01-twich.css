@@ -1,0 +1,441 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+
+
+.container{
+    width: 100%;
+    height: 2000px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/* navbar-start */
+
+.navbar{
+    width: 100%;    
+    height: 50px;
+    background-color: #18181b;
+    display: flex;
+    /* position: fixed; */
+    
+}
+
+.navbar-left{
+    font-size: 18px;
+    color: #bf94ff;
+    width: calc(100% / 3);
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-middle{
+    width: calc(100% / 3);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.search{
+    width: 355px;
+    height: 35px;
+    border-radius: 7px;
+    margin-right: 2px;
+}
+
+.search-img{
+    width: 35px;
+    height: 35px;
+    border-radius: 0px 7px 7px 0;
+    background-image: url(https://us.123rf.com/450wm/zaki31072017/zaki310720172005/zaki31072017200505484/148749113-magnifying-glass-icon-vector-illustration-template-design-trendy.jpg?ver=6);
+    background-size: cover;
+}
+
+
+.navbar-right{
+    color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: calc(100% / 3);
+    height: 100%;
+    padding: 10px;
+}
+
+
+
+.button{
+    width: 55px;
+    height: 30px;
+    text-align: center;
+    margin-right: 5px;
+    background-color: rgba(128, 128, 128, 0.281);
+    border-radius: 8px;
+}
+
+.user{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Breezeicons-actions-22-im-user.svg/1200px-Breezeicons-actions-22-im-user.svg.png);
+    background-size: cover;
+}
+
+
+.logo{
+    width: 40px;
+    height: 40px;
+    background-image: url(data:image/png;base64,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);
+    background-size: cover;
+    background-position: center;
+    margin-left: 13px;
+    margin-right: 20px;
+
+}
+
+.browse{
+    font-size: 13px;
+    width: 29px;
+    height: 29px;
+    margin-right: 20px;
+    border-bottom: solid 3px #7627ec; ;
+}
+
+
+
+.list{
+    width: 19px;
+    height: 19px;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/512/512222.png);
+    background-size: cover;
+}
+
+
+.sidebar{
+    width: 50px;
+    height: calc(100% - 50px);
+    background-color: #18181b;
+    /* position: fixed;
+    top: 50px;
+     */
+}
+
+.avatars{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.avatar{
+    width: 30px;
+    height: 30px;
+    border-radius: 100px 100px;
+    background-color: rgb(147, 37, 250);
+    margin-bottom: 10px;
+
+
+}
+
+/* navbar-end */
+
+
+
+.content{
+    width: calc(100% - 50px);
+    background-color: #0e0e10;
+    padding: 34px;
+    color: white;
+    /* display: flex;
+    flex-direction: column; */
+    
+}
+
+
+/* shortcut start */
+.shortcut-row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    
+    /* margin: 34px ; */
+    /* flex-wrap: wrap; */
+    /* align-items: center; */
+}
+
+.shortcut-col4{
+    display: flex;
+    width: calc( (100% - 24px) / 4 );
+    height: 60px;
+    /* display: flex; */
+}
+
+.shortcut-card{
+    display: flex;
+    width: 100%;
+    background-color: #772ce8;
+    padding-left: 16px;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.shortcut-tit{
+    width: 100%;
+    font-size: 30px;
+}
+
+.shortcut-img{
+    vertical-align: top;
+    margin-top: -26px;
+}
+/* shortcut end */
+
+/* player start */
+.player{
+    width: 100%;
+}
+
+.player-introducion{
+    padding-top: 54px;
+    padding-bottom: 50px;
+}
+
+.player-title1{
+    font-size: 60px;
+    line-height: 1;
+    margin-top: 15px;
+}
+
+.player-info1{
+    font-size: 24px;
+    color: #afafb1;
+
+}
+
+.player-row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 10px 10px;
+}
+
+.player-col6{
+    width: calc((100% - 50px) / 6);
+    display: flex;
+}
+
+.player-row tr:nth-child(6n){
+    margin-right: 0;
+}
+
+.player-card{
+    display: flex;
+    width: 100%;
+    padding: 8px;
+    /* height: 70px; */
+    gap: 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.075);
+}
+
+
+.player-img img{
+    width: 38px;
+    height: 50px;
+}    
+
+.player-text{
+    width: calc(100% - 38px) ;
+    font-size: 13px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    /* word-break: break-all; */
+}
+
+
+.player-name{
+    width: 100%;
+    font-weight: bold;
+}
+
+.player-info{
+    color: #ffffffad;
+}
+
+.player-icon{
+    width: 38px;
+    height: 50px;
+    font-size: 13px;
+}
+
+.live{
+    text-align: center;
+    font-weight: bold;
+    width: 38px;
+    height: 20px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 5px;
+    letter-spacing: 1px;
+
+}
+
+/* player end */
+
+/* battle start */
+
+.battle{
+    width: 100%;
+    /* height: 100px; */
+}
+
+.battle-introducion{
+    margin: 38px 0px 26px 0px;
+}
+
+.battle-tit{
+    font-size: 36px;
+    line-height: 1;
+    margin-bottom: 5px;
+    
+}
+
+.battle-info{
+    font-size: 18px;
+    line-height: 1;
+    color: #afafb1;
+    
+}
+
+.battle-row{
+    width: 100%;
+    display: flex;
+}
+
+
+
+.battle-row3{
+    width: 30%;
+    
+}
+.battle-row7{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+    margin-left: 20px;
+    
+}
+
+
+.battle-col4{
+    width: calc((100% - 60px) /4 );
+    /* height: 243px; */
+}
+
+.battle-col4 tr:nth-child(4n){
+    margin-right: 0px;
+}
+
+.battle-card{
+    width: 100%;
+    /* height: 100%; */
+    /* height: 203px; */
+    border-radius: 3px;
+}
+
+.bg-big .battle-bg{
+    height: 200px;
+    font-size: 13px;
+}
+
+.bg-big .battle-text{
+    font-size: 18px;
+}
+
+.battle-bg{
+    width: 100%;
+    height: 120px;
+    background-size: contain;
+    background-image: url(https://static-cdn.jtvnw.net/previews-ttv/live_user_leetesport-470x265.jpg);
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 13px;
+    padding: 16px 13px;
+    
+}
+
+.battle-icon{
+    background-color: red;
+    width: 38px;
+    height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+
+
+}
+
+
+.condition{
+    background-color: rgba(7, 7, 7, 0.61);
+    width: 94px;
+    height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+
+.battle-text{
+    font-size: 14px;
+    height: calc(100% - 137px);
+    line-height: 1;
+}
+
+.battle-channel{
+    height: 15px;
+    display: flex;
+    color: #bf94ff;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.channel-avatar{
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    background-image: url(https://static-cdn.jtvnw.net/jtv_user_pictures/e0ebb649-820b-432a-9f48-c1aa390800ce-profile_image-150x150.png);
+    border-radius: 100px 100px;
+}
+
+.channel-tit{
+    margin-bottom: 8px;
+
+}
+
+.channel-type{
+    font-size: 13px;
+    color: rgba(128, 128, 128, 0.479);
+
+}
+
+/* battle end */

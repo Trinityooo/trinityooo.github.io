@@ -1,0 +1,123 @@
+.card {
+  color: #636161;
+  font-weight: 400;
+}
+
+.card .card-body .progress {
+  right: 0;
+  top: 15px;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  width: 70%;
+}
+
+.card .card-body .progress-step {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-bgc {
+  background-color: #bdbdbd85;
+}
+
+.order-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.order-list .order-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.order-list .order-info .order-bn, .order-list .order-info .order-fix {
+  font-size: 35px;
+  color: #ff9307;
+  margin-right: 20px;
+}
+
+.order-list .order-info .order-ps {
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.order-list .order-input {
+  width: 50px;
+}
+
+.order-list input::-webkit-outer-spin-button,
+.order-list input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.order-item .order-item-total .order-reduce, .order-item .order-item-total .order-plus {
+  color: gray;
+  border: none;
+}
+
+.order-item-count {
+  margin-left: auto;
+  text-align: right;
+}
+
+.order-item-count > div > span {
+  letter-spacing: 2px;
+}
+
+.order-item-count > div > span:last-child {
+  display: inline-block;
+  width: 100px;
+}
+
+.order-item-step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.order-item-step .btn {
+  width: 100px;
+  height: 40px;
+  border: 1;
+  border-color: #d34808;
+  color: white;
+  background-color: #d34808;
+}
+
+.order-item-step .Previous {
+  color: gray;
+  background-color: transparent;
+}
+
+.order-list-fin {
+  line-height: 50px;
+}
+/*# sourceMappingURL=checkout.css.map */

@@ -1,0 +1,437 @@
+*{
+    box-sizing:border-box
+}
+
+body{
+    margin: 0 ;
+}
+
+/* header----------------------------------------start */
+.container{
+    max-width: 100%;
+    height: 2000px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.navbar{
+    display: flex;
+    height: 54px;
+    align-items: center;
+    font-size: 13px;
+    color: #262626;
+    font-family: 'Segoe UI',SegoeUI,'Microsoft JhengHei',微軟正黑體,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/* menu------------------------------start */
+.mb-menu{
+    display: none;
+    font-size: 0;
+}
+
+.navbar > .logo{
+    width: 108px;
+    height: 23px;
+}
+
+.menu-lists{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    margin-left: 28px;
+    line-height: 1;
+}
+
+.menu-lists .list{
+    margin-right: 23px;
+}
+
+/* 更多 */
+.list:last-child{
+    display: none;
+}
+
+/* 效果 */
+.list ::after{
+    width: 100%;
+    height: 2px;
+    color: #262626;
+}
+
+
+/* menu---------------------------------end */
+
+/* button-------------------------------start */
+.fuction-btns{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+
+.fuction-btn{
+    color: black;
+    text-decoration: none;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+}
+
+.search , .login {
+    margin-left: 20px;
+    }
+
+.shopping-cart{
+    margin-left: 35px;
+}
+    
+
+/* button------icon----------------start */
+/* arrow */
+.all-Microsoft > .fa-chevron-down {
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+ /* 放大鏡    */
+.search > .fa-search {
+    font-size: 15px;
+    margin-top: 5px;
+    transform: scaleX(-1);
+    margin-left: 5px;
+    margin-top: 2px;
+    }
+
+/* 購物車 */
+.shopping-cart > .fa-shopping-cart {
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+/* 登入 */
+.login-icon{
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+}
+
+/* button------icon------end */
+/* button------end */
+/* header------------------------------------------end */
+
+/* pc  */
+@media screen and (max-width:1400px){
+    .search > span{
+        display: none;
+    }
+
+    .shopping-cart > span{
+        display: none;
+        margin: 0;
+    }
+
+    .login > span{
+        display: none;
+    }
+
+    .search , .login , .shopping-cart{
+        margin: 0;
+    }
+
+    .search > .fa-search {
+    margin-left: 35px;
+    margin-top: 0;
+    }
+
+    .shopping-cart > .fa-shopping-cart {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+    
+    .login > .login-icon {
+        margin-left: 20px;
+    }
+
+}    
+
+/* small pc */
+@media screen and (max-width:948px) {
+
+    .list:nth-child(5),
+    .list:nth-child(6){
+        display: none;
+    }
+    
+    .list:last-child{
+        display: block;
+        position: relative;
+    }
+    
+    .list > .fa-chevron-down{
+        position: absolute;
+        top: 5px;
+        transform: translateX(50%);
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width:790px) {
+    
+    .navbar{
+        position: relative;
+    }
+    
+    .navbar > .logo{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+    .menu-items{
+        display: none;
+    }
+
+    .mb-menu{
+        display: block;
+    }
+    
+    .fa-bars{
+        font-size: 17px;
+    }
+    
+    .list{
+        display: none;
+    }
+    
+    .list:last-child{
+        display: none;
+    }  
+
+    .all-Microsoft{
+        display: none;
+    }
+    
+    .fuction-btns{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .fuction-btn > span{
+        display: none;
+    }
+
+    .shopping-cart{
+        margin-left: auto;
+    }
+
+}
+
+/* Banner-----------------------------------start */
+.bn{
+    height: 100vh;
+}
+
+.bn-img{
+    /* width: 100%; */
+    height: 560px;
+    background-position:center;
+    background-size: cover;
+    background-image: url(../images/RWLPC.webp);
+    /* padding: 0 60px; */
+    position: relative;
+
+}
+
+.bn-info{
+    width: 522px;
+    height: 200px;
+    font-size: 15px;
+    color: white;
+    margin-left: 60px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.info-tag{
+    width: 80px;
+    height: 30px;
+    color: black;
+    background-color: #ffb900;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.info-title{
+    font-size: 34px;
+    line-height: 2;
+}
+
+.info-content{
+    color: rgba(255, 255, 255, 0.822);
+    margin-bottom: 30px;
+    line-height: 1;
+}
+
+.info-buy{
+    padding: 10px 40px 10px 18px;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+}
+
+.fa-chevron-right{
+    margin-left: 15px;
+}
+/* Banner--------------------------------------end*/
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* small pc */
+@media screen and (max-width:948px){
+    .bn{
+        padding: 0;
+    }
+
+    .navbar{
+        padding:0 30px;
+    }
+
+    .bn-img{
+        height: 580px;
+        background-image: url(../images/RWLAmj.webp);
+    }
+
+    .bn-info{
+        height: 190px;
+        
+    }
+    .info-title{
+        font-size: 24px;
+    }
+    
+    .info-content{
+    width: 340px;
+    margin-top: 10px;
+    margin-bottom: 27px;
+    line-height: 1.5;
+    }
+}
+
+
+/* mobile */
+@media screen and (max-width:790px){
+    .bn-img{
+        height: 410px;
+        background-image: url(../images/RWLMOBILE.webp);
+        position: static;
+    }
+
+    .info-tag{
+        margin: 0 auto;
+    }
+    
+    .bn-info{
+        width: 100%;
+        height: 320px;
+        margin: 0;
+        text-align: center;
+        font-size: 15px;
+        color: rgb(255, 255, 255);
+        background: #333333;
+        padding: 50px 0;
+        position: static;
+        top: 0;
+        transform: none;
+    }
+
+    .info-title{
+        font-size: 20px;
+
+    }
+
+    .info-content{
+        margin: 10px auto 27px;
+    }
+
+}
+
+/* Shortcut-----------------------------------start */
+
+.shortcuts{
+    
+    width: 100%;
+    /* height: 230px; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 60px 0 60px 0;
+}
+
+.shortcut{
+    width: 130px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+    text-decoration: none;
+    color: #262626;
+}
+
+.shortcut > img{
+    width: 40px;
+    height: 40px;
+}
+
+.shortcut >span{
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* mobile */
+@media screen and (max-width:790px){
+    .shortcuts{
+        padding-left: 43px;
+        width: 100%;
+        height: 323px;
+        display: block;
+
+    }
+
+    .shortcut{
+        width: 190px;
+        height: 47px;
+        display: block;
+        margin: 0;
+
+    }
+
+    .shortcut > img{
+        width: 15px;
+        height: 15px;
+        margin-right: 12px;
+        
+    }
+
+    .shortcut >span{
+        text-align: left;
+    }
+
+    .shortcut-1{
+        margin: 0;
+    }
+}
+/* Shortcut-----------------------------------end */
+
+

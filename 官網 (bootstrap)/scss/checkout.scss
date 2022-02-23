@@ -1,0 +1,105 @@
+@import "variable";
+@import "mixin";
+
+.card{
+    color: rgb(99, 97, 97);
+    font-weight: 400;
+
+    .card-body{
+        .progress {
+            right: 0;
+            top: 15px;
+            transform: translateX(50%);
+            width: 70%;
+        }
+
+        .progress-step {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.main-bgc{
+    background-color: #bdbdbd85;
+}
+
+.order-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .order-info {
+        display: flex;
+        align-items: center;
+
+        .order-bn,.order-fix{
+            font-size: 35px;
+            color: #ff9307;
+            margin-right: 20px;
+        }
+        .order-ps{
+            width: 40px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+    }
+    
+    .order-input {
+        width: 50px;
+    }
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+}
+
+.order-item{
+    .order-item-total{
+        .order-reduce,.order-plus{
+            color: $text-color-gray;
+            border: none;
+        }
+    }
+}
+
+.order-item-count {
+    margin-left: auto;     
+    text-align: right;
+    
+        >div{
+            >span{
+                letter-spacing:2px;
+                &:last-child{
+                    display: inline-block;
+                    width: 100px;
+                    
+                }
+            }
+        }
+}       
+
+.order-item-step {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    .btn{
+        @include size(100px , 40px, 1 ,$decoration-color-red);
+        @include button ( $text-color-white, $decoration-color-red);
+    }    
+
+    .Previous{
+        color: $text-color-gray;
+        background-color: transparent;
+    }
+}             
+
+.order-list-fin{
+    line-height: 50px;
+}
+        
