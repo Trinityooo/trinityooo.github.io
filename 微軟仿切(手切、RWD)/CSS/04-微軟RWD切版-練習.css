@@ -428,7 +428,7 @@ body {
     }
 
     .footer-item {
-        width: calc((100% - 500px) / 6);
+        width: calc((100% - 350px) / 6);
     }
     .footer-nav-bar {
         gap: 90px;
@@ -654,4 +654,14 @@ body {
     .ud-footer-list {
         padding-right: 18px;
     }
+
+    .ud-footer-nav-bar {
+        flex-wrap: wrap;
+    }
+
+    .ud-footer-item {
+        flex-wrap: wrap;
+    }
+
+
 }
