@@ -6,8 +6,6 @@ body{
     margin: 0;
 }
 
-
-
 .container{
     width: 100%;
     height: 2000px;
@@ -370,7 +368,7 @@ body{
 .battle-bg{
     width: 100%;
     height: 120px;
-    background-size: contain;
+    background-size: cover;
     background-image: url(https://static-cdn.jtvnw.net/previews-ttv/live_user_leetesport-470x265.jpg);
     margin-bottom: 8px;
     display: flex;
@@ -390,8 +388,6 @@ body{
     border-radius: 5px;
     font-weight: bolder;
     letter-spacing: 1px;
-
-
 }
 
 
