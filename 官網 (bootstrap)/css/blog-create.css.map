@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,YAAY,CAAA;EACR,MAAM,EAAE,KAAK;EACb,gBAAgB,EAAE,uBAAuB;EACzC,KAAK,EAAE,OAAO;CAOjB;;AAVD,AAKI,YALQ,CAKR,oBAAoB,CAAA;EAChB,KAAK,EAAE,GAAG;CAEb",
-    "sources": [
-        "../scss/blog-create.scss"
-    ],
-    "names": [],
-    "file": "blog-create.css"
-}
