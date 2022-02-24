@@ -8,7 +8,7 @@ body{
 
 .container{
     width: 100%;
-    height: 2000px;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
 
@@ -21,7 +21,7 @@ body{
     height: 50px;
     background-color: #18181b;
     display: flex;
-    /* position: fixed; */
+    position: fixed;
     
 }
 
@@ -121,11 +121,9 @@ body{
 
 .sidebar{
     width: 50px;
-    height: calc(100% - 50px);
+    height: 100%;
     background-color: #18181b;
-    /* position: fixed;
-    top: 50px;
-     */
+    position: fixed;
 }
 
 .avatars{
@@ -154,9 +152,8 @@ body{
     background-color: #0e0e10;
     padding: 34px;
     color: white;
-    /* display: flex;
-    flex-direction: column; */
-    
+    margin-top: 50px;
+    margin-left: 50px;
 }
 
 
